@@ -98,7 +98,7 @@ def dfs(v, Matrix, visited, vSize, size):
         visited.append(v)
         vSize += 1
     else:
-        return visited, vSize
+        return visited
     for i in range(size):
         if Matrix[v][i] and visited.count(i) == 0:
             dfs(i, Matrix, visited, vSize, size)
